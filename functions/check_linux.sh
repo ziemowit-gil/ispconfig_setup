@@ -168,11 +168,26 @@ CheckLinux() {
 		#	Ubuntu 18.04
 		#---------------------------------------------------------------------
 
-		elif echo "$VERSION_ID" | grep -iq "18.04"; then
+		elif echo "$VERSION_ID" | grep -iq "20.04"; then
 			DISTRO=ubuntu-18.04
 		fi
 
 	elif echo "$ID" | grep -iq "centos"; then
+
+
+		elif echo "$VERSION_ID" | grep -iq "20.04.04"; then
+			DISTRO=ubuntu-18.04
+		fi
+
+	elif echo "$ID" | grep -iq "centos"; then
+
+
+		elif echo "$VERSION_ID" | grep -iq "20.04.04"; then
+			DISTRO=ubuntu-18.04
+		fi
+
+	elif echo "$ID" | grep -iq "centos"; then
+
 
 		#---------------------------------------------------------------------
 		#	CentOS
